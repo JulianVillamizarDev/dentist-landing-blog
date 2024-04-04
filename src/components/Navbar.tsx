@@ -4,6 +4,8 @@ import { navbarData } from "../utils/data";
 
 export default function NavbarC() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    console.log(isMenuOpen);
+    
 
     return (
         <Navbar
@@ -36,11 +38,19 @@ export default function NavbarC() {
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
             </NavbarContent>
 
-            <NavbarMenu className="flex flex-col items-center">
+            <NavbarMenu className="flex flex-col items-center pt-16" onClick={() => setIsMenuOpen(false)}>
                 {
                     navbarData.map((item) => (
-                        <NavbarMenuItem key={item.title}>
-                            <Link href={item.href}>{item.title}</Link>
+                        <NavbarMenuItem key={item.title} className="w-1/2">
+                            <Button 
+                                as={Link} 
+                                href={item.href} 
+                                variant="ghost" 
+                                color="primary" 
+                                className="w-full"
+                            >
+                                {item.title}
+                            </Button>
                         </NavbarMenuItem>
                     ))
                 }
