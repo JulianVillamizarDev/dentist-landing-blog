@@ -1,4 +1,6 @@
 ---
+import NavbarC from '../components/Navbar';
+import Footer from '../components/Footer';
 interface Props {
 	title: string;
 }
@@ -7,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -17,7 +19,11 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<NavbarC client:visible />
+		<div class="max-w-7xl mx-auto px-4 xl:px-0">
+			<slot />	
+		</div>
+		<Footer client:visible />
 	</body>
 </html>
 <style is:global>
