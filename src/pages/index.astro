@@ -3,10 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import AccordionFAQ from '../components/AccordionFAQ';
-import { services } from '../utils/data';
+import Carousel from '../components/Carousel';
+import { services, carouselImages } from '../utils/data';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Od. Angela Villamizar">
     <Hero client:visible />
     <section id="services" class="my-16">
         <h1 class="font-bold text-4xl text-center">Conoce Nuestros Servicios</h1>
@@ -28,6 +29,5 @@ import { services } from '../utils/data';
         <div class="max-w-3xl mx-auto">
             <AccordionFAQ client:visible />   
         </div>
-        
     </section>
 </Layout>

@@ -6,7 +6,19 @@ export default {
 		"./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
 	],
 	theme: {
-		extend: {},
+		extend: {
+			animation: {
+				fade: 'fadeOut 1s ease-in-out',
+			  },
+		
+			  // that is actual animation
+			  keyframes: theme => ({
+				fadeOut: {
+				  '0%': { opacity: '0.1' },
+				  '100%': { opacity: '1' },
+				},
+			  }),
+		},
 	},
 	darkMode: 'class',
 	plugins: [nextui({

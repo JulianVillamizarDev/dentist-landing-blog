@@ -1,15 +1,15 @@
 export const navbarData = [
     {
         title: 'Acerca',
-        href: '#about'
+        href: '/#about'
     },
     {
         title: 'Servicios',
-        href: '#services'
+        href: '/#services'
     },
     {
         title: 'Contacto',
-        href: '#contact'
+        href: '/#contact'
     },
     {
         title: 'Blog',
@@ -61,19 +61,31 @@ export const services = [
 
 export const FAQ = [
     {
-        name: 'Pregunta 1',
-        description: 'Descripción de la pregunta 1',
+        name: '¿Cuáles son los servicios dentales que ofrece su clínica?',
+        description: 'En nuestra clínica dental ofrecemos una amplia gama de servicios, que incluyen limpiezas dentales, empastes, extracciones, tratamientos de conducto, blanqueamiento dental, ortodoncia, implantes dentales y mucho más. Nuestro equipo está capacitado y equipado para brindar atención de alta calidad en todas estas áreas de la odontología.',
     },
     {
-        name: 'Pregunta 2',
-        description: 'Descripción de la pregunta 2'
+        name: '¿Qué medidas de seguridad e higiene implementan para garantizar la salud de los pacientes durante las visitas?',
+        description: 'La salud y seguridad de nuestros pacientes es nuestra máxima prioridad. Implementamos estrictos protocolos de esterilización y desinfección en todas nuestras instalaciones y equipos. Nuestro personal utiliza equipo de protección personal (EPP) y seguimos las pautas establecidas por las autoridades sanitarias para minimizar el riesgo de infecciones cruzadas.'
     },
     {
-        name: 'Pregunta 3',
-        description: 'Descripción de la pregunta 3'
+        name: '¿Cuál es el proceso de programación de una cita dental?',
+        description: 'Programar una cita es fácil y conveniente. Puedes llamar a nuestra clínica durante el horario de atención o utilizar nuestro formulario en línea para solicitar una cita. Nuestro equipo se comunicará contigo para confirmar la fecha y hora de tu cita, así como para proporcionarte cualquier información adicional que puedas necesitar.'
     },
     {
-        name: 'Pregunta 4',
+        name: '¿Aceptan seguro dental? ¿Cuál es su política de pago?',
         description: 'Descripción de la pregunta 4'
+    },
+    {
+        name: '¿Qué debo hacer en caso de emergencia dental fuera del horario de atención?',
+        description: 'En caso de una emergencia dental fuera del horario de atención, te recomendamos que te comuniques con nuestra clínica de inmediato. Proporcionamos un servicio de atención de emergencia las 24 horas del día, los 7 días de la semana, para ayudarte en momentos de necesidad. Nuestro equipo estará disponible para brindarte la atención urgente que necesitas.'
     }
+]
+
+export const carouselImages = [
+    '/gallery/1.jpg',
+    '/gallery/2.jpg',
+    '/gallery/3.jpg',
+    '/gallery/4.jpg',
+    'gallery/5.jpg'
 ]
