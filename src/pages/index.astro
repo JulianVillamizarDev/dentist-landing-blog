@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero';
 import ServiceCard from '../components/ServiceCard';
 import AccordionFAQ from '../components/AccordionFAQ';
-import Carousel from '../components/Carousel';
+import Contact from '../components/Contact';
 import { services, carouselImages } from '../utils/data';
 ---
 
@@ -30,4 +30,5 @@ import { services, carouselImages } from '../utils/data';
             <AccordionFAQ client:visible />   
         </div>
     </section>
+    <Contact client:visible />
 </Layout>

@@ -1,0 +1,18 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+const { title, description, pubDate, author, image, tags} = frontmatter;
+---
+<Layout title={`${frontmatter.title} - Od. Angela Villamizar`}>
+    <main class="max-w-7xl mx-auto px-4 xl:px-0 space-y-2">
+        <h1 class="text-4xl text-center">{frontmatter.title}</h1>
+        <p class="text-center">{frontmatter.description}</p>
+        <slot />
+    </main>
+</Layout>
+
+<style>
+    h2 {
+        @apply text-4xl;
+    }
+</style>

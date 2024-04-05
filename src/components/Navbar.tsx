@@ -4,8 +4,6 @@ import { navbarData } from "../utils/data";
 
 export default function NavbarC() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-    console.log(isMenuOpen);
-    
 
     return (
         <Navbar
