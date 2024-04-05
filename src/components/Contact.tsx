@@ -9,9 +9,9 @@ export default function Contact() {
     
     return (
         <section className="my-16 grid lg:grid-cols-2">
-            <div className="flex flex-col items-start justify-center">
+            <div className="flex flex-col items-center justify-center lg:items-start">
                 <h3 className="text-gray-400">Quieres agendar tu cita?</h3>
-                <h1 className="font-bold text-6xl">Contactanos</h1>
+                <h1 className="font-bold text-5xl lg:text-6xl">Contactanos</h1>
                 <div className="my-6 flex flex-col gap-2">
                     <Button as={Link} href={`mailto:${MAIL}`} variant="solid" color="primary" startContent={<Email/>}>{MAIL}</Button>
                     <Button as={Link} href={`https://wa.me/${PHONE_NUMBER.trim()}`} variant="solid" color="success" className="text-white" startContent={<Whatsapp/>}>WhatsApp</Button>
@@ -20,10 +20,13 @@ export default function Contact() {
             <div className="flex flex-col items-center">
                 <Card>
                     <CardBody>
-                        <Image src="/consultorio-maps.png" />
+                        <Image 
+                            className="object-cover w-full h-full" 
+                            removeWrapper
+                            src="/consultorio-maps.png" 
+                        />
                     </CardBody>
                 </Card>
-                <Snippet className="my-6">Av Libertadores, bahía Torres del Parque, Local C1</Snippet>
             </div>
         </section>
     )
