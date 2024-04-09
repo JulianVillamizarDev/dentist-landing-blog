@@ -1,34 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero';
+import Hero from '../components/sections/Hero';
 import ServiceCard from '../components/ServiceCard';
 import AccordionFAQ from '../components/AccordionFAQ';
-import Contact from '../components/Contact';
-import { services, carouselImages } from '../utils/data';
+import Contact from '../components/sections/Contact';
+import Services from '../components/sections/Services';
+import Carousel from '../components/Carousel';
+import { carouselImages } from '../utils/data';
 ---
 
 <Layout title="Od. Angela Villamizar">
     <Hero client:visible />
-    <section id="services" class="my-16">
-        <h1 class="font-bold text-4xl text-center">Conoce Nuestros Servicios</h1>
-        <div class="mt-8 flex flex-wrap gap-8 justify-center lg:justify-start">
-            {
-                services.map(service => (
-                <ServiceCard
-                    name={service.name}
-                    description={service.description}
-                    imgUrl={service.imgUrl}
-                    client:visible
-                />
-                ))
-            }   
-        </div>
-    </section>
+    <Services client:visible />
     <Contact client:visible />
-    <section id="FAQ" class="my-16">
+    <section id="FAQ">
         <h1 class="font-bold text-4xl text-center my-8">Preguntas Frecuentes</h1>
         <div class="max-w-3xl mx-auto">
             <AccordionFAQ client:visible />   
         </div>
     </section>
+    
 </Layout>

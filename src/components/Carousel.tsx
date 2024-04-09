@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { carouselImages } from "../utils/data";
-import { Button, Image } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 interface CarouselProps {
     images: Array<string>;
@@ -8,52 +7,63 @@ interface CarouselProps {
     showButtons?: boolean;
 }
 
-export default function Carousel( props: CarouselProps) {
+export default function CarouselSlider( props: CarouselProps) {
 
     const { images, autoPlay = false, showButtons = false} = props;
 
-    const [selectedIndex, setSelectedIndex] = useState(0);
-    const [selectedImage, setSelectedImage] = useState(images[0]);
-    const [ loaded, setLoaded ] = useState(false);
+    const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect( () => {
-        if( autoPlay || !showButtons){
+        if(autoPlay){
             const interval = setInterval(() => {
-                nextImage();
-            }, 5000);
+                nextSlide();
+            }, 2000);
             return () => clearInterval(interval);
         }
-    });
+    })
 
-    const selectNewImage = (index: number, next = true) => {
-        setLoaded(false);
-            const condition = next ? index < images.length - 1 : index > 0;
-            const nextIndex = next ? (condition ? selectedIndex + 1 : 0) : condition ? selectedIndex - 1 : images.length - 1;
-            setSelectedIndex(nextIndex);
-            setSelectedImage(images[nextIndex]);
+    const nextSlide = () => {
+        if (currentSlide === images.length - 1) {
+            setCurrentSlide(0);
+        } else {
+            setCurrentSlide(currentSlide + 1);
+        }
     }
-    const previousImage = () => {
-        selectNewImage(selectedIndex, false);
-    };
-        
-    const nextImage = () => {
-        selectNewImage(selectedIndex);
-    };
+
+    const prevSlide = () => {
+        if (currentSlide === 0) {
+            setCurrentSlide(images.length - 1);
+        } else {
+            setCurrentSlide(currentSlide - 1);
+        }
+    }
 
     return (
-        <div className="relative flex justify-center items-center">
-            <Image 
-                src={selectedImage} 
-                alt="carousel" 
-                loading="lazy" 
-                className={`w-[480px] h-[384px] object-cover z-0 ${ loaded ? "animate-fade" : ""}`}
-                onLoad={() => setLoaded(true)}
-            />
+        <div className="overflow-hidden relative">
+            <div 
+                className="flex transition ease-out duration-40 w-full h-full"
+                style={{
+                    transform: `translateX(-${currentSlide * 100}%)`,
+                }}
+            >
+                {images.map((image, index) => (
+                    <img
+                        key={`carousel-img-${index}`}
+                        src={image}
+                        className="w-full h-full object-cover rounded-md"
+                        alt={`Slide ${index + 1}`}
+                    />
+                ))}
+            </div>
             {
-                showButtons &&
+                showButtons && 
                 <>
-                    <Button className="absolute left-0 z-10" onClick={previousImage}>Prev</Button>
-                    <Button className="absolute right-0 z-10" onClick={nextImage}>Next</Button>
+                    <div className="absolute h-full top-1/2 left-0 ml-2">
+                        <Button onClick={prevSlide}>Prev</Button>
+                    </div>
+                    <div className="absolute h-full top-1/2 right-0 mr-2">
+                        <Button onClick={nextSlide}>Next</Button>
+                    </div>
                 </>
             }
             
