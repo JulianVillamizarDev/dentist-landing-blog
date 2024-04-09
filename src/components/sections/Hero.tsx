@@ -1,9 +1,9 @@
 import { Button, Link, Image } from "@nextui-org/react"
-import Carousel from "./Carousel";
-import { carouselImages } from "../utils/data";
+import Carousel from "../Carousel";
+import { carouselImages } from "../../utils/data";
 export default function Hero() {
     return (
-        <section id="about" className="py-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="place-self-center flex flex-col justify-center items-center text-center py-4">
                     <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">Odontología de Calidad, Sonrisas Brillantes</h1>
                     <p className="max-w-2xl mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">

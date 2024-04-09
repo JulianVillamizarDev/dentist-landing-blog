@@ -1,6 +1,6 @@
 import { Card, CardBody, Image, Snippet, Button, Link } from "@nextui-org/react";
-import Email from "./icons/Email";
-import Whatsapp from "./icons/Whatsapp";
+import Email from "../icons/Email";
+import Whatsapp from "../icons/Whatsapp";
 
 export default function Contact() {
 
@@ -8,7 +8,7 @@ export default function Contact() {
     const PHONE_NUMBER = '573142384249';
     
     return (
-        <section className="my-16 grid lg:grid-cols-2">
+        <section id="contact" className="grid lg:grid-cols-2">
             <div className="flex flex-col items-center justify-center lg:items-start">
                 <h3 className="text-gray-400">Quieres agendar tu cita?</h3>
                 <h1 className="font-bold text-5xl lg:text-6xl">Contactanos</h1>
@@ -17,7 +17,7 @@ export default function Contact() {
                     <Button as={Link} href={`https://wa.me/${PHONE_NUMBER.trim()}`} variant="solid" color="success" className="text-white" startContent={<Whatsapp/>}>WhatsApp</Button>
                 </div>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center">
                 <Card>
                     <CardBody>
                         <Image 
