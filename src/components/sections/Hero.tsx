@@ -1,5 +1,5 @@
 import { Button, Link, Image } from "@nextui-org/react"
-import Carousel from "../Carousel";
+import CarouselSlider from "../Carousel";
 import { carouselImages } from "../../utils/data";
 export default function Hero() {
     return (
@@ -12,7 +12,7 @@ export default function Hero() {
                     <Button as={Link} href="#contact" size="lg" className="font-semibold" variant="ghost" color="secondary">Contactanos</Button>
                 </div>
                 <div className="flex justify-center">
-                    <Carousel images={carouselImages} autoPlay showButtons={false} />
+                    <CarouselSlider images={carouselImages} autoPlay showButtons={false} />
                 </div>
         </section>
     )
