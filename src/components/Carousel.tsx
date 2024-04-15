@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@nextui-org/react";
+import ArrowIcon from "./icons/Arrow";
 
 interface CarouselProps {
     images: Array<string>;
@@ -12,15 +13,6 @@ export default function CarouselSlider( props: CarouselProps) {
     const { images, autoPlay = false, showButtons = false} = props;
 
     const [currentSlide, setCurrentSlide] = useState(0);
-
-    useEffect( () => {
-        if(autoPlay){
-            const interval = setInterval(() => {
-                nextSlide();
-            }, 2000);
-            return () => clearInterval(interval);
-        }
-    })
 
     const nextSlide = () => {
         if (currentSlide === images.length - 1) {
@@ -59,10 +51,14 @@ export default function CarouselSlider( props: CarouselProps) {
                 showButtons && 
                 <>
                     <div className="absolute h-full top-1/2 left-0 ml-2">
-                        <Button onClick={prevSlide}>Prev</Button>
+                        <Button onClick={prevSlide} color="primary">
+                            <ArrowIcon direction="left"/>
+                        </Button>
                     </div>
                     <div className="absolute h-full top-1/2 right-0 mr-2">
-                        <Button onClick={nextSlide}>Next</Button>
+                        <Button onClick={nextSlide} color="primary">
+                            <ArrowIcon />
+                        </Button>
                     </div>
                 </>
             }
