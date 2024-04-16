@@ -6,8 +6,8 @@ export default function AccordionFAQ() {
         <Accordion variant="splitted">
             {
                 FAQ.map((item, index) => (
-                    <AccordionItem key={`faq-${index}`} className="font-semibold" title={item.name}>
-                        <span className="font-light">
+                    <AccordionItem key={`faq-${index}`} className="font-semibold my-0" title={item.name}>
+                        <span className="font-light m-0 p-0">
                             {item.description}
                         </span>
                     </AccordionItem>
