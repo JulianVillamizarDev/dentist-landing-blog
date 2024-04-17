@@ -6,6 +6,8 @@ import AccordionFAQ from '../components/AccordionFAQ';
 import Contact from '../components/sections/Contact';
 import Services from '../components/sections/Services';
 import About from '../components/sections/About';
+import Title from '../components/Title';
+import Section from '../components/Section';
 ---
 
 <Layout title="Od. Angela Villamizar">
@@ -13,10 +15,10 @@ import About from '../components/sections/About';
     <Services client:visible />
     <About client:visible />
     <Contact client:visible />
-    <section id="FAQ">
-        <h1 class="font-bold text-4xl text-center my-8">Preguntas Frecuentes</h1>
+    <Section id="FAQ" className="flex flex-col items-center justify-center" client:visible>
+        <Title>Preguntas Frecuentes</Title>
         <div class="max-w-3xl mx-auto">
             <AccordionFAQ client:visible />   
         </div>
-    </section>
+    </Section>
 </Layout>
