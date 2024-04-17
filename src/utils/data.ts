@@ -83,9 +83,9 @@ export const FAQ = [
 ]
 
 export const carouselImages = [
-    '/gallery/1.jpg',
-    '/gallery/2.jpg',
-    '/gallery/3.jpg',
-    '/gallery/4.jpg',
-    'gallery/5.jpg'
+    '/gallery/img-1.jpg',
+    '/gallery/img-2.jpg',
+    '/gallery/img-3.jpg',
+    '/gallery/img-4.jpg',
+    'gallery/ortodoncia.jpg'
 ]

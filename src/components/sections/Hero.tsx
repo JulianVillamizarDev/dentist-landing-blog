@@ -1,6 +1,4 @@
 import { Button, Link, Image } from "@nextui-org/react"
-import CarouselSlider from "../Carousel";
-import { carouselImages } from "../../utils/data";
 export default function Hero() {
     return (
         <div className="relative overflow-hidden w-full h-[512px] m-0 p-0">

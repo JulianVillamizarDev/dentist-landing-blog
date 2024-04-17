@@ -1,4 +1,5 @@
 const { nextui } = require("@nextui-org/react");
+import { carouselImages } from "./src/utils/data";
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
@@ -8,15 +9,15 @@ export default {
 	theme: {
 		extend: {
 			animation: {
-				fade: 'fadeOut 1s ease-in-out',
+				autoSlide: 'slide 5s linear infinite',
 			  },
 		
 			  // that is actual animation
 			  keyframes: theme => ({
-				fadeOut: {
-				  '0%': { opacity: '0.1' },
-				  '100%': { opacity: '1' },
-				},
+				slide: {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: `translateX(-100%)` },
+				}
 			  }),
 		},
 	},
