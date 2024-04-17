@@ -18,7 +18,7 @@ export default function NavbarC() {
                 <NavbarBrand>
                     <Link href="/" color="foreground" className="flex items-center gap-2">
                         <Image src="logo-2.webp" className="w-8 h-8" alt="logo"/>
-                        <span>Angela Villamizar</span>
+                        <span className="hidden sm:block">Angela Villamizar</span>
                     </Link>
                 </NavbarBrand>
             </NavbarContent>
