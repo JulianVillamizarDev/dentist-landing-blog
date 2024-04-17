@@ -4,8 +4,8 @@ import Title from "../Title"
 
 export default function About() {
     return (
-        <Section>
-            <div id="about" className="mx-auto flex flex-col xl:grid xl:grid-cols-2 gap-24">
+        <Section id="about">
+            <div className="mx-auto flex flex-col xl:grid xl:grid-cols-2 gap-24">
                 <div className="flex flex-col items-start">
                     <Title className="w-full">
                         Nosotros
