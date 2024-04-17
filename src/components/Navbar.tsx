@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button, Image } from "@nextui-org/react";
 import { navbarData } from "../utils/data";
+import ToothIcon from "./icons/Tooth";
 
 export default function NavbarC() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -39,13 +40,15 @@ export default function NavbarC() {
             <NavbarMenu className="flex flex-col items-center pt-16" onClick={() => setIsMenuOpen(false)}>
                 {
                     navbarData.map((item) => (
-                        <NavbarMenuItem key={item.title} className="w-1/2">
+                        <NavbarMenuItem key={item.title} className="w-52">
                             <Button 
                                 as={Link} 
                                 href={item.href} 
                                 variant="ghost" 
                                 color="primary" 
-                                className="w-full"
+                                className="w-full justify-between"
+                                startContent={<ToothIcon />}
+                                endContent={<ToothIcon />}
                             >
                                 {item.title}
                             </Button>
