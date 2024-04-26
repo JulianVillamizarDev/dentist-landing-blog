@@ -25,11 +25,23 @@ export default function NavbarC() {
 
             <NavbarContent className="hidden sm:flex gap-4" justify="end">
                 {
-                    navbarData.map((item) => (
-                        <NavbarItem key={item.title}>
-                            <Link className="font-normal text-primary-900 hover:text-primary-400" href={item.href}>{item.title}</Link>
-                        </NavbarItem>
-                    ))
+                    navbarData.map((item, index) => {
+                    
+                        if(index === navbarData.length - 1){
+                            return (
+                                <NavbarItem key={item.title}>
+                                    <Button as={Link} color="primary" variant="ghost" href={item.href}>{item.title}</Button>
+                                </NavbarItem>
+                            )
+                        }
+
+                        return    (
+                            <NavbarItem key={item.title}>
+                                <Link className="font-normal text-primary-900 hover:text-primary-400" href={item.href}>{item.title}</Link>
+                            </NavbarItem>
+                        )
+                    })
+                
                 }
             </NavbarContent>
 

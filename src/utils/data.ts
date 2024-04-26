@@ -12,8 +12,8 @@ export const navbarData = [
         href: '/#contact'
     },
     {
-        title: 'Blog',
-        href: '/blog'
+        title: 'Agenda Tu Cita',
+        href: '/register'
     }
 ]
 
@@ -88,4 +88,27 @@ export const carouselImages = [
     '/gallery/img-3.jpg',
     '/gallery/img-4.jpg',
     'gallery/ortodoncia.jpg'
+];
+
+export const identificationTypes = [
+    {
+        key: 'cc',
+        value: 'cc',
+        text: 'Cédula de Ciudadania'
+    },
+    {
+        key: 'ti',
+        value: 'ti',
+        text: 'Tarjeta de Identidad'
+    },
+    {
+        key: 'rc',
+        value: 'registro-civil',
+        text: 'Registro Civil'
+    },
+    {
+        key: 'passport',
+        value: 'pasaporte',
+        text: 'Pasaporte'
+    },
 ]
