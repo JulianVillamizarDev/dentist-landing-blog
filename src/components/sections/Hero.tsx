@@ -16,7 +16,7 @@ export default function Hero() {
                     </p>
                     <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center gap-4">
                         <Button as={Link} href="#contact" size="lg" fullWidth className="font-semibold text-xl" color="secondary">Contactanos</Button>
-                        <Button as={Link} href="#" size="lg" fullWidth className="font-semibold text-xl" color="secondary" variant="bordered">Agenda Tu Cita</Button>   
+                        <Button as={Link} href="/register" size="lg" fullWidth className="font-semibold text-xl" color="secondary" variant="bordered">Agenda Tu Cita</Button>   
                     </div>
                     
                 </div>
