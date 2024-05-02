@@ -1,4 +1,8 @@
-export const navbarData = [
+
+    export const MAIL = 'od.angelavillamizar@hotmail.com';
+    export const PHONE_NUMBER = '573142384249';
+    
+    export const navbarData = [
     {
         title: 'Acerca',
         href: '/#about'
