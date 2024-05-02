@@ -6,9 +6,9 @@ export default function Title({ children, className = '', color = 'primary' }: a
                 {children}
             </h1>
             <footer className={`text-${color}-400 flex items-center justify-center gap-4 w-full mt-2`}>
-                <div className={`flex-1 h-1 w-full ${ color === "white"? "bg-white":"bg-"+color+"-400"} mt-2`}/>
+                <div className={`flex-1 h-1 w-full ${ color === "white"? "bg-white":`bg-${color}-400`} mt-2`}/>
                 <ToothIcon/>
-                <div className={`flex-1 h-1 w-full ${ color === "white"? "bg-white":"bg-"+color+"-400"} mt-2`}/>
+                <div className={`flex-1 h-1 w-full ${ color === "white"? "bg-white":`bg-${color}-400`} mt-2`}/>
             </footer>     
         </div>
     )
