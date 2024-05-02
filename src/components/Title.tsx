@@ -1,7 +1,7 @@
 import ToothIcon from "./icons/Tooth"
 export default function Title({ children, className = '', color = 'primary' }: any) {
     return (
-        <div className={`flex flex-col items-center justify-center my-8 text-${color}-400 ${className}`}>
+        <div className={`flex flex-col items-center justify-center mb-8 text-${color}-400 ${className}`}>
             <h1 className="font-bold text-center">
                 {children}
             </h1>
