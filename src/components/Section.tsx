@@ -9,7 +9,7 @@ export default function Section({children, className, id=''}: SectionProps) {
     return (
         <section 
             id={id}
-            className={`max-w-7xl mx-auto px-4 xl:px-0 ${className}`}>
+            className={`max-w-7xl mx-auto px-4 xl:px-0 py-0 ${className}`}>
             {children}
         </section>
     )
