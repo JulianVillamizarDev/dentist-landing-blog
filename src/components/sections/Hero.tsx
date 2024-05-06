@@ -5,15 +5,14 @@ export default function Hero() {
     return (
         <Section className="grid grid-cols-1 xl:grid-cols-2 gap-4 mt-0 mb-8 lg:my-16">
                 <div className="flex flex-col justify-center xl:items-start items-center px-4 h-screen lg:h-auto lg:py-16 2xl:py-0">
+                    <h1 className="max-w-2xl mb-4 text-center xl:text-left text-5xl font-semibold tracking-tight leading-none xl:text-6xl dark:text-white">Odontología de Calidad, Sonrisas Brillantes</h1>
+                    <p className="max-w-2xl font-light text-center lg:text-left text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                        Enfocados en la excelencia odontológica, hacemos que cada visita sea cómoda y efectiva. Confía en nosotros para mantener tu sonrisa saludable y hermosa.
+                    </p>
                     <div className="w-full flex flex-col items-center justify-center gap-2 xl:hidden my-8 xl:my-0">
                         <span>Pregunta por nuestro plan:</span>
                         <Chip variant="bordered" color="primary" className="">Sonrisa x Sonrisa</Chip>  
                     </div>
-                    
-                    <h1 className="max-w-2xl mb-4 text-center xl:text-left text-5xl font-semibold tracking-tight leading-none xl:text-6xl dark:text-white">Odontología de Calidad, Sonrisas Brillantes</h1>
-                    <p className="max-w-2xl mb-6 font-light text-gray-900 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                        Enfocados en la excelencia odontológica, hacemos que cada visita sea cómoda y efectiva. Confía en nosotros para mantener tu sonrisa saludable y hermosa.
-                    </p>
                     <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center gap-4">
                         <Button as={Link} href="#contact" size="lg" fullWidth className="font-semibold text-xl" color="secondary">Contactanos</Button>
                         <Button as={Link} href="/register" size="lg" fullWidth className="font-semibold text-xl" color="secondary" variant="bordered">Agenda Tu Cita</Button>   
