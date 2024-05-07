@@ -1,8 +1,8 @@
 import React, { useState} from "react"
-import Section from "../Section"
 import { Input, Button, Select, SelectItem, Textarea, DatePicker, TimeInput, Autocomplete, AutocompleteItem } from "@nextui-org/react"
 import { identificationTypes } from "../../utils/data"
 import phonePrefixes from "../../utils/phone-prefixes.json"
+import type { MailData } from "../../types"
 
 export default function RegisterForm() {
 
@@ -24,20 +24,20 @@ export default function RegisterForm() {
 
     const handleForm = (e: any) => {
         e.preventDefault();
-        const mailObj = {
+        const mailObj: MailData = {
             name, 
             surname, 
             email, 
             idType, 
             id, 
-            prefix: phonePrefixes.find( prefix => prefix.code === phonePrefix)?.dial_code, 
+            phonePrefix: phonePrefixes.find( prefix => prefix.code === phonePrefix)?.dial_code, 
             phoneNumber, 
             initialTime, 
             endTime,
             date, 
             description
         }
-        console.log("sending");
+        console.log(mailObj);
         
     }
 
@@ -83,8 +83,8 @@ export default function RegisterForm() {
                     <Input className="col-span-3" type="number" label="Teléfono Móvil" aria-label="Teléfono Móvil" value={phoneNumber} isRequired onChange={(e) => setPhoneNumber(e.target.value)} />
                 </div>
                 <div className="flex flex-col md:flex-row gap-4 items-end">
-                    <TimeInput label="¿En que rango horario deseas ser atendido?" aria-label="rango" labelPlacement="outside" isRequired onChange={(e) => setInitialTime(e.toString())} />
-                    <TimeInput isRequired label="" aria-label="rango-2" onChange={(e) => setEndTime(e.toString())} />
+                    <TimeInput label="¿En que rango horario deseas ser atendido?" aria-label="rango" labelPlacement="outside" isRequired onChange={(e) => setInitialTime(`${e.hour}:${e.minute}`)} />
+                    <TimeInput isRequired label="" aria-label="rango-2" onChange={(e) => setEndTime(`${e.hour}:${e.minute}`)} />
                 </div>
                 <DatePicker label="¿Que día deseas ser atendido?" aria-label="dia" labelPlacement="outside" isRequired onChange={(e) => setDate(e.toString())} />
                 <Textarea labelPlacement="outside" label="¡Cuentanos! ¿Cual es el motivo de tu cita?" aria-label="decription" placeholder="Consulta, blanqueamiento dental, etc." isRequired value={description} onChange={(e) => setDescription(e.target.value)} />
