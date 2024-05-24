@@ -35,11 +35,11 @@ export default function Hero() {
                             <div className="bg-gray-300 text-primary-400 p-2 rounded-full">
                                 <ToothIcon></ToothIcon>    
                             </div>
-                            <h1 className="text-2xl font-semibold">Test</h1>
+                            <h1 className="text-2xl font-semibold">Experiencia Profesional Excepcional</h1>
                         </CardHeader>
                         <CardBody className="p-2">
                             <p className="text-lg text-gray-500" >
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis necessitatibus nulla laboriosam iste!
+                            Desde odontología general hasta procedimientos especializados, estamos comprometidos a brindar la mejor atención profesional para garantizar la salud bucal de nuestros pacientes.
                             </p>
                         </CardBody>
                     </Card>
@@ -49,11 +49,11 @@ export default function Hero() {
                             <div className="bg-gray-300 text-primary-400 p-2 rounded-full">
                                 <ToothIcon></ToothIcon>    
                             </div>
-                            <h1 className="text-2xl font-semibold">Test</h1>
+                            <h1 className="text-2xl font-semibold">Tecnología Avanzada y Tratamientos Innovadores</h1>
                         </CardHeader>
                         <CardBody className="p-2">
                             <p className="text-lg text-gray-500" >
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis necessitatibus nulla laboriosam iste!
+                                En nuestra clínica, nos comprometemos a mantenernos a la vanguardia de la tecnología odontológica.
                             </p>
                         </CardBody>
                     </Card>
@@ -63,11 +63,11 @@ export default function Hero() {
                             <div className="bg-gray-300 text-primary-400 p-2 rounded-full">
                                 <ToothIcon></ToothIcon>    
                             </div>
-                            <h1 className="text-2xl font-semibold">Test</h1>
+                            <h1 className="text-2xl font-semibold">Enfoque Personalizado y Cálido</h1>
                         </CardHeader>
                         <CardBody className="p-2">
                             <p className="text-lg text-gray-500" >
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis necessitatibus nulla laboriosam iste!
+                            Nuestro equipo se preocupa por tus necesidades individuales y se dedica a proporcionar un cuidado personalizado que se adapte a ti.
                             </p>
                         </CardBody>
                     </Card>

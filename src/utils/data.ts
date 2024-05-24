@@ -77,10 +77,6 @@ export const FAQ = [
         description: 'Programar una cita es fácil y conveniente. Puedes llamar a nuestra clínica durante el horario de atención o utilizar nuestro formulario en línea para solicitar una cita. Nuestro equipo se comunicará contigo para confirmar la fecha y hora de tu cita, así como para proporcionarte cualquier información adicional que puedas necesitar.'
     },
     {
-        name: '¿Aceptan seguro dental? ¿Cuál es su política de pago?',
-        description: 'Descripción de la pregunta 4'
-    },
-    {
         name: '¿Qué debo hacer en caso de emergencia dental fuera del horario de atención?',
         description: 'En caso de una emergencia dental fuera del horario de atención, te recomendamos que te comuniques con nuestra clínica de inmediato. Proporcionamos un servicio de atención de emergencia las 24 horas del día, los 7 días de la semana, para ayudarte en momentos de necesidad. Nuestro equipo estará disponible para brindarte la atención urgente que necesitas.'
     }
