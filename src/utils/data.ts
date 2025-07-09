@@ -17,7 +17,7 @@ export const navbarData = [
     },
     {
         title: 'Agenda Tu Cita',
-        href: '/register'
+        href: `https://wa.me/${PHONE_NUMBER.trim()}`
     }
 ]
 

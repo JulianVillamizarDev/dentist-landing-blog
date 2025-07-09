@@ -30,14 +30,14 @@ export default function NavbarC() {
                         if(index === navbarData.length - 1){
                             return (
                                 <NavbarItem key={item.title}>
-                                    <Button as={Link} color="primary" variant="ghost" href={item.href}>{item.title}</Button>
+                                    <Button as={Link} color="primary" variant="ghost" target="_blank" href={item.href}>{item.title}</Button>
                                 </NavbarItem>
                             )
                         }
 
                         return    (
                             <NavbarItem key={item.title}>
-                                <Link className="font-normal text-primary-900 hover:text-primary-400" href={item.href}>{item.title}</Link>
+                                <Link className="font-normal text-primary-900 hover:text-primary-400"href={item.href}>{item.title}</Link>
                             </NavbarItem>
                         )
                     })
