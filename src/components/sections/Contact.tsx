@@ -9,7 +9,7 @@ export default function Contact() {
     return (
         <Section id="contact" className="grid lg:grid-cols-2">
             <div className="flex flex-col items-center justify-center lg:items-start">
-                <h3 className="text-gray-400">¿Quieres agendar tu cita?</h3>
+                <h3 className="text-gray-400">Deseas agendar tu cita?</h3>
                 <h1 className="font-bold text-5xl md:text-6xl">Contactanos</h1>
                 <div className="my-6 flex flex-col gap-2">
                     <Button as={Link} href={`mailto:${MAIL}`} variant="solid" color="primary" startContent={<Email/>}>{MAIL}</Button>

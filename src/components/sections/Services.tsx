@@ -8,7 +8,7 @@ export default function Services() {
         <div>
             <Section id="services" className="flex flex-col items-center justify-center py-32">
                 <Title>Conoce Nuestros Servicios</Title>
-                <div className="mt-8 flex flex-wrap gap-8 justify-center lg:justify-start">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                     {
                         services.map(service => (
                         <ServiceCard
