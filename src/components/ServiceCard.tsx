@@ -1,5 +1,10 @@
-import {Card, CardHeader, CardBody, CardFooter, Image, Button, Link} from "@nextui-org/react";
-import type{ ServiceCardProps } from "../types";
+import {Card, CardHeader, CardBody, CardFooter, Image, Button, Link} from "@heroui/react";
+
+interface ServiceCardProps {
+    name: string;
+    description: string;
+    imgUrl: string;
+}
 
 export default function ServiceCard({ name, description, imgUrl}: ServiceCardProps) {
     return (

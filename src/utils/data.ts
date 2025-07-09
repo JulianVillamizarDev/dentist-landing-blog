@@ -1,8 +1,8 @@
 
-    export const MAIL = 'od.angelavillamizar@hotmail.com';
-    export const PHONE_NUMBER = '573142384249';
-    
-    export const navbarData = [
+export const MAIL = 'od.angelavillamizar@hotmail.com';
+export const PHONE_NUMBER = '573142384249';
+
+export const navbarData = [
     {
         title: 'Acerca',
         href: '/#about'
@@ -24,19 +24,11 @@
 export const socialLinks = [
     {
         title: 'Facebook',
-        href: '#',
+        href: 'https://www.facebook.com/angela.villamizar.165/',
     },
     {
         title: 'Instagram',
-        href: '#',
-    },
-    {
-        title: 'X',
-        href: '#',
-    },
-    {
-        title: 'Threads',
-        href: '#',
+        href: 'https://www.instagram.com/od.angelavillamizar',
     },
 ]
 
@@ -74,12 +66,12 @@ export const FAQ = [
     },
     {
         name: '¿Cuál es el proceso de programación de una cita dental?',
-        description: 'Programar una cita es fácil y conveniente. Puedes llamar a nuestra clínica durante el horario de atención o utilizar nuestro formulario en línea para solicitar una cita. Nuestro equipo se comunicará contigo para confirmar la fecha y hora de tu cita, así como para proporcionarte cualquier información adicional que puedas necesitar.'
+        description: 'Programar una cita es fácil y conveniente. Puedes llamar a nuestra clínica durante el horario de atención o comunicarse con nosotros a través de Whatsapp.'
     },
     {
-        name: '¿Qué debo hacer en caso de emergencia dental fuera del horario de atención?',
-        description: 'En caso de una emergencia dental fuera del horario de atención, te recomendamos que te comuniques con nuestra clínica de inmediato. Proporcionamos un servicio de atención de emergencia las 24 horas del día, los 7 días de la semana, para ayudarte en momentos de necesidad. Nuestro equipo estará disponible para brindarte la atención urgente que necesitas.'
-    }
+        name: '¿Cuales son las opciones de pago disponibles para los tratamientos dentales?',
+        description: 'Ofrecemos diversas opciones de pago para adaptarnos a las necesidades de nuestros pacientes. Aceptamos efectivo, tarjetas de crédito y débito, así como transferencias bancarias mediante nuestro código QR. También ofrecemos planes de financiamiento como Addi para facilitar el acceso a tratamientos dentales de calidad.',
+    },
 ]
 
 export const carouselImages = [

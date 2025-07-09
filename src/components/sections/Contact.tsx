@@ -1,4 +1,4 @@
-import { Card, CardBody, Image, Snippet, Button, Link } from "@nextui-org/react";
+import { Card, CardBody, Image, Snippet, Button, Link } from "@heroui/react";
 import { MAIL, PHONE_NUMBER } from "../../utils/data";
 import Section from "../Section";
 import Email from "../icons/Email";
@@ -17,11 +17,7 @@ export default function Contact() {
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center">
-                <Image 
-                    className="object-fit max-h-[512px]" 
-                    removeWrapper
-                    src="/consultorio-maps.png" 
-                />
+                <iframe className="rounded-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.939729686293!2d-72.4853874!3d7.9013658000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6645e7dd2ea547%3A0x721c636235529de6!2sOdontolog%C3%ADa%20Angela%20Villamizar%20-%20Odontolog%C3%ADa%20Especializada!5e0!3m2!1ses!2sco!4v1752025022200!5m2!1ses!2sco" width="600" height="450"  loading="lazy"></iframe>
             </div>
         </Section>
     )

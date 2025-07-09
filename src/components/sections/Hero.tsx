@@ -1,4 +1,4 @@
-import { Button, Link, Card, CardHeader, CardBody, Chip } from "@nextui-org/react"
+import { Button, Link, Card, CardHeader, CardBody, Chip } from "@heroui/react"
 import ToothIcon from "../icons/Tooth"
 import Section from "../Section"
 export default function Hero() {

@@ -5,9 +5,9 @@ import Title from "../Title"
 
 export default function Services() {
     return (
-        <div className="bg-primary-400 text-white">
+        <div>
             <Section id="services" className="flex flex-col items-center justify-center py-32">
-                <Title color="white">Conoce Nuestros Servicios</Title>
+                <Title>Conoce Nuestros Servicios</Title>
                 <div className="mt-8 flex flex-wrap gap-8 justify-center lg:justify-start">
                     {
                         services.map(service => (

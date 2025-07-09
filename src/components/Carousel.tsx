@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Button } from "@nextui-org/react";
+import { Button } from "@heroui/react";
 import ArrowIcon from "./icons/Arrow";
 
 interface CarouselProps {

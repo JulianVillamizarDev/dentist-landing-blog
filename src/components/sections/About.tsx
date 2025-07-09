@@ -1,4 +1,4 @@
-import { Image } from "@nextui-org/react"
+import { Image } from "@heroui/react"
 import Section from "../Section"
 import Title from "../Title"
 
@@ -11,7 +11,7 @@ export default function About() {
                         Nosotros
                     </Title>
                     <p className="text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac pellentesque ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam volutpat quam nec libero congue vestibulum. Maecenas id nulla neque. Fusce convallis semper enim eget imperdiet. Proin non posuere tellus. In sed nisl dui. Pellentesque eget posuere erat, id lacinia magna. Praesent a quam non magna posuere commodo. Ut nec nibh eget urna facilisis efficitur eget eu risus. In urna nulla, vulputate eget consectetur vitae, commodo hendrerit tellus. Pellentesque ornare varius sollicitudin.
+                        Somos un equipo de profesionales apasionados por la odontología, comprometidos con tu salud bucal y bienestar. Con años de experiencia, ofrecemos servicios de alta calidad en un ambiente acogedor y moderno. Nuestro objetivo es brindarte una atención personalizada y soluciones efectivas para que sonrías con confianza.
                     </p>   
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-8">

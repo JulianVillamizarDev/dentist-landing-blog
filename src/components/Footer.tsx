@@ -1,4 +1,4 @@
-import { Link, Image } from "@nextui-org/react";
+import { Link, Image } from "@heroui/react";
 import { navbarData,socialLinks } from "../utils/data";
 
 export default function Footer() {
